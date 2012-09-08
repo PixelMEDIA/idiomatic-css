@@ -20,9 +20,9 @@ like to see changes, or open an issue for discussion.
 5. [Naming](#naming)
 6. [Practical example](#example)
 7. [Organization](#organization)
-<!--
-8. [Build and deployment](#build-and-deployment)
--->
+
+
+<!-- 8. [Build and deployment](#build-and-deployment) -->
 
 [Acknowledgements](#acknowledgements)
 
