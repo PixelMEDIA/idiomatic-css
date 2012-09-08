@@ -20,7 +20,9 @@ contribute.
 5. [Naming](#naming)
 6. [Practical example](#example)
 7. [Organization](#organization)
+<!--
 8. [Build and deployment](#build-and-deployment)
+-->
 
 [Acknowledgements](#acknowledgements)
 
@@ -138,8 +140,8 @@ in useful diffs and blames.
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
     font-family: helvetica, arial, sans-serif;
@@ -178,11 +180,6 @@ Properties should be ordered alphabetically, with a few exceptions. Position pro
     z-index: 10;
 }
 ```
-
-Strict alphabetical ordering is also relatively popular, but the drawback is
-that it separates related properties. For example, position offsets are no
-longer grouped together and box-model properties can end up spread throughout a
-declaration block.
 
 #### Exceptions and slight deviations
 
@@ -300,29 +297,29 @@ An example of various conventions.
  */
 
 .grid {
-    overflow: visible;
-    height: 100%;
-    /* Prevent inline-block cells wrapping */
-    white-space: nowrap;
     /* Remove inter-cell whitespace */
     font-size: 0;
+    height: 100%;
+    overflow: visible;
+    /* Prevent inline-block cells wrapping */
+    white-space: nowrap;
 }
 
 .cell {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
+    border: 2px solid #333;
     box-sizing: border-box;
-    width: 20%;
+    display: inline-block;
+    /* Reset font-size */
+    font-size: 16px;
     height: 100%;
+    overflow: hidden;
     /* Set the inter-cell spacing */
     padding: 0 10px;
-    border: 2px solid #333;
+    position: relative;
     vertical-align: top;
     /* Reset white-space */
     white-space: normal;
-    /* Reset font-size */
-    font-size: 16px;
+    width: 20%;
 }
 
 /* Cell states */
@@ -362,7 +359,7 @@ large code bases.
 * If using a preprocessor, abstract common code into variables for color,
   typography, etc.
 
-
+<!--
 <a name="build-and-deployment"></a>
 ## 8. Build and deployment
 
@@ -370,7 +367,7 @@ Projects should always attempt to include some generic means by which source
 can be linted, tested, compressed, and versioned in preparation for production
 use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is an
 excellent tool.
-
+-->
 
 <a name="acknowledgements"></a>
 ## Acknowledgements
