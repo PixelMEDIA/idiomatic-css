@@ -6,7 +6,7 @@ This was forked from <a href="https://github.com/necolas/idiomatic-css">idiomati
 meant to be used as a guideline for the developers at my work. 
 
 This is a living document and new ideas are always welcome. Please fork and contribute if you'd 
-like to see changes.
+like to see changes, or open an issue for discussion.
 
 
 
