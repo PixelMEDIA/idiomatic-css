@@ -1,12 +1,12 @@
 # Principles of writing consistent, idiomatic CSS
 
 The following document outlines a reasonable style guide for CSS development.
-It is not meant to be prescriptive and I do not wish to impose my style
-preferences on other people's code. However, these guidelines do strongly
-encourage the use of existing, common, sensible patterns.
+These guidelines do strongly encourage the use of existing, common, sensible patterns.
+This was forked from <a href="https://github.com/necolas/idiomatic-css">idiomatic-css</a> and is 
+meant to be used as a guideline for the developers at my work. 
 
-This is a living document and new ideas are always welcome. Please
-contribute.
+This is a living document and new ideas are always welcome. Please fork and contribute if you'd 
+like to see changes.
 
 
 
