@@ -9,20 +9,6 @@ This is a living document and new ideas are always welcome. Please
 contribute.
 
 
-## Translations
-
-* [Deutsch](https://github.com/necolas/idiomatic-css/tree/master/translations/de-DE)
-* [Français](https://github.com/necolas/idiomatic-css/tree/master/translations/fr-FR)
-* [Italiano](https://github.com/necolas/idiomatic-css/tree/master/translations/it-IT)
-* [日本語](https://github.com/necolas/idiomatic-css/tree/master/translations/ja-JP)
-* [한국어](https://github.com/necolas/idiomatic-css/tree/master/translations/ko-KR)
-* [Nederlands](https://github.com/necolas/idiomatic-css/tree/master/translations/nl-NL)
-* [Polski](https://github.com/necolas/idiomatic-css/tree/master/translations/pl-PL)
-* [Português (Brasil)](https://github.com/necolas/idiomatic-css/tree/master/translations/pt-BR)
-* [Русский](https://github.com/necolas/idiomatic-css/tree/master/translations/ru-RU)
-* [Srpski](https://github.com/necolas/idiomatic-css/tree/master/translations/sr-SR)
-* [Türkçe](https://github.com/necolas/idiomatic-css/tree/master/translations/tr-TR)
-* [简体中文](https://github.com/necolas/idiomatic-css/tree/master/translations/zh-CN)
 
 
 ## Table of contents
@@ -62,10 +48,7 @@ be consistent in your use of whitespace. Use whitespace to improve
 readability.
 
 * _Never_ mix spaces and tabs for indentation.
-* Choose between soft indents (spaces) or real tabs. Stick to your choice
-  without fail. (Preference: spaces)
-* If using spaces, choose the number of characters used per indentation level.
-  (Preference: 4 spaces)
+* Preference is for tabs rather than spaces.
 
 Tip: configure your editor to "show invisibles". This will allow you to
 eliminate end of line whitespace, eliminate unintended blank line whitespace,
@@ -166,38 +149,33 @@ in useful diffs and blames.
 }
 ```
 
-#### Declaration order
+#### Property order
 
-Declarations should be ordered in accordance with a single principle. My
-preference is for structurally important properties (e.g. positioning and
-box-model) to be declared prior to all others.
+Properties should be ordered alphabetically, with a few exceptions. Position properties (top, right, bottom, left) should be located after the "position" property and indented. Properties with vendor prefixes should be located directly above the non prefixed property and indented.
 
 ```css
 .selector {
-    /* Positioning */
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    /* Display & Box Model */
-    display: inline-block;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border: 10px solid #333;
-    margin: 10px;
-
-    /* Other */
     background: #000;
-    color: #fff
+    border: 10px solid #333;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
     font-family: sans-serif;
     font-size: 16px;
+    height: 100px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     text-align: right;
+    width: 100px;
+    z-index: 10;
 }
 ```
 
