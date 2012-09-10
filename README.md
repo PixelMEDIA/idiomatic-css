@@ -140,14 +140,14 @@ in useful diffs and blames.
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
+    background: #fff;
+    background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
     box-sizing: border-box;
+    color: #333;
     display: block;
     font-family: helvetica, arial, sans-serif;
-    color: #333;
-    background: #fff;
-    background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
 }
 ```
 
